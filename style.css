@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.board {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(238, 238, 191);
+}
+
+#todo-form {
+  padding: 32px 32px 0;
+}
+
+#todo-form input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+}
+
+#todo-form button {
+  padding: 12px 32px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lanes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 750px;
+  margin: 30px;
+  gap: 10px;
+}
+
+.swim-lane .heading {
+  margin: 5px 10px;
+}
+
+.swim-lane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(233, 223, 223);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.swim-lane .task {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  height: 40px;
+  margin: 10px;
+  cursor: move;
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: rgba(50, 50, 50);
+  color: white;
+}
